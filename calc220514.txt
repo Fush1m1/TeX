@@ -1,0 +1,23 @@
+\documentclass[fleqn]{jsarticle}
+\begin{document}
+
+p8
+問題１（２）
+
+\begin{eqnarray*}
+\lim_{x \to 1} \frac{x-1}{\sqrt{x^2+1}-\sqrt{2}} &=& \lim_{x \to 1} \frac{(x-1)(\sqrt{x^2+1}+\sqrt{2})}{x^2+1-2} \\
+\\
+&=& \lim_{x \to 1} \frac{\sqrt{x^2+1}+\sqrt{2}}{x+1} \\
+\\
+&=& \frac{2\sqrt{2}}{2} \\
+\\
+&=& \sqrt{2}
+\end{eqnarray*}
+\end{document}
+
+
+%スクショ
+%左余白はサムネール表示ボタンの下矢印に合わせる
+%以下、スクリプト
+%platex calc220514.txt
+%dvipdfmx calc220514.dvi
