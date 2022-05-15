@@ -1,0 +1,37 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+
+\parindent = 0pt
+
+\begin{document}
+
+p12\\
+問題4（4）\\
+\\
+yを微分せよ
+
+
+%\sqrt[3]{x}-1
+
+
+\begin{eqnarray*}
+y=\left(\frac{\sqrt[3]{x}-1}{\sqrt[3]{x}+1}\right)^3
+\end{eqnarray*}
+
+\begin{eqnarray*}
+y'&=&3\left(\frac{\sqrt[3]{x}-1}{\sqrt[3]{x}+1}\right)^2\cdot\frac{(\sqrt[3]{x}-1)'(\sqrt[3]{x}+1)-(\sqrt[3]{x}-1)(\sqrt[3]{x}+1)'}{(\sqrt[3]{x}+1)^2}\\
+\\
+\\
+&=& 3\left(\cfrac{\sqrt[3]{x}-1}{\sqrt[3]{x}+1}\right)^2\cdot\cfrac{\cfrac{2}{3} \cdot x^-\frac{2}{3}}{(\sqrt[3]{x}+1)^2}\\
+\\
+\\
+&=&\frac{2(\sqrt[3]{x}-1)^2}{\sqrt[3]{x^2}(\sqrt[3]{x}+1)^4}
+\end{eqnarray*}
+\end{document}
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+%platex calc220516.txt
+%dvipdfmx calc220516.dvi
