@@ -1,0 +1,23 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\begin{document}
+p13\\
+問題1（2）\\
+\\
+\begin{eqnarray*}
+\lim_{x \to 0} \frac{x+\sin x}{\tan x} &=& \lim_{x \to 0} \frac{\cos x(x+\sin x)}{\sin x} \\
+\\
+&=& \lim_{x \to 0} \frac{x}{\sin x} \cdot \frac{\cos x(x+\sin x)}{x} \\
+\\
+&=& \lim_{x \to 0} \frac{x}{\sin x} \cdot \cos x \cdot(1+\frac{\sin x}{x})\\
+\\
+&=& 1\cdot1\cdot(1+1)\\
+\\
+&=& 2
+\end{eqnarray*}
+\end{document}
+%スクショポイント(135,)
+%以下、スクリプト
+%platex calc220518.txt
+%dvipdfmx calc220518.dvi
