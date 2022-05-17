@@ -1,0 +1,25 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\begin{document}
+
+p13\\
+問題2（1）\\
+\\
+yを微分せよ
+
+\begin{eqnarray*}
+y=\sin(7x+8)
+\end{eqnarray*}
+\begin{eqnarray*}
+y'&=&\cos(7x+8)\cdot(7x+8)'\\
+&=&7\cos(7x+8)
+\end{eqnarray*}
+\end{document}
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+%platex calc220517.txt
+%dvipdfmx calc220517.dvi
