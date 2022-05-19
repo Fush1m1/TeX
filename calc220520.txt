@@ -1,0 +1,21 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題1(2)\\
+\\
+積分定数をCとする。
+\begin{displaymath}
+\int(\sqrt[4]{x^3}+x^{-2})dx=\frac{4}{7}x^\frac{7}{4}-\frac{1}{x} + C
+\end{displaymath}
+\end{document}
+
+
+%スクショポイント(135,)
+%以下、スクリプト
+%platex calc220520.txt
+%dvipdfmx calc220520.dvi
