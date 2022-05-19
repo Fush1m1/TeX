@@ -1,0 +1,21 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題1(1)\\
+\\
+積分定数をCとする。
+\begin{displaymath}
+\int(\frac{3}{x}+\sqrt{x})dx=3\log\abs x + \frac{2}{3}x^\frac{3}{2} + C
+\end{displaymath}
+\end{document}
+
+
+%スクショポイント(135,)
+%以下、スクリプト
+%platex calc220519.txt
+%dvipdfmx calc220519.dvi
