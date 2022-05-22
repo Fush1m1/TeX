@@ -1,0 +1,26 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題1(4)\\
+\\
+積分定数をCとする。
+\begin{displaymath}
+\int\left(\sqrt[4]{x}+x^{\frac{3}{2}}\right)dx = \frac{4}{5}x^{\frac{5}{4}}+\frac{2}{5}x^{\frac{5}{2}}
+\end{displaymath}
+\end{document}
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220522.txt
+dvipdfmx calc220522.dvi
+
+\end{comment}
