@@ -1,0 +1,29 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題1(6)\\
+\\
+積分定数をCとする。
+\begin{eqnarray*}
+\int\left(\frac{2}{\sqrt[3]{x}}-\frac{1}{x^4}\right)dx &=& \int\left(2x^{-\frac{1}{3}}-x^{-4}\right)dx\\
+\\
+&=& 3\sqrt[3]{x^2}+\frac{1}{3x^3} + C
+\end{eqnarray*}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220524.txt
+dvipdfmx calc220524.dvi
+
+\end{comment}
