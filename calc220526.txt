@@ -1,0 +1,30 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題2(2)\\
+\\
+積分定数をCとする。
+\\
+\begin{eqnarray*}
+\int(1-4x)^3dx &=& \frac{1}{4}\cdot(-\frac{1}{4})(1-4x)^4+C\\
+\\
+&=& -\frac{1}{16}(1-4x)^4+C
+\end{eqnarray*}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220526.txt
+dvipdfmx calc220526.dvi
+
+\end{comment}
