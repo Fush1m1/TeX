@@ -1,0 +1,28 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題3(1)\\
+\\
+積分定数をCとする。
+\\
+\begin{displaymath}
+\int\frac{dx}{x+2} = \log\abs{x+2}+C\\
+\end{displaymath}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220528.txt
+dvipdfmx calc220528.dvi
+
+\end{comment}
