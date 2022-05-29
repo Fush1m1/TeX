@@ -1,0 +1,28 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題3(2)\\
+\\
+積分定数をCとする。
+\\
+\begin{displaymath}
+\int\frac{dx}{7-3x} = -\frac{1}{3}\log\abs{7-3x}+C\\
+\end{displaymath}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220529.txt
+dvipdfmx calc220529.dvi
+
+\end{comment}
