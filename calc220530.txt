@@ -1,0 +1,28 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題3(3)\\
+\\
+積分定数をCとする。
+\\
+\begin{displaymath}
+\int\sqrt[3]{x+5}\hspace{1mm}dx = \frac{3}{4}(x+5)^{\frac{4}{3}}+C\\
+\end{displaymath}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220530.txt
+dvipdfmx calc220530.dvi
+
+\end{comment}
