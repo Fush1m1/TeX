@@ -1,0 +1,30 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題4(1)\\
+\\
+積分定数をCとする。
+\\
+\begin{eqnarray*}
+\int\left(x+\frac{1}{x}\right)^2 dx&=& \int\left(x^2+2+\frac{1}{x^2}\right)dx\\
+\\
+&=& \frac{x^3}{3}+2x-\frac{1}{x}+C
+\end{eqnarray*}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220603.txt
+dvipdfmx calc220603.dvi
+
+\end{comment}
