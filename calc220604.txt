@@ -1,0 +1,30 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題4(2)\\
+\\
+積分定数をCとする。
+\\
+\begin{eqnarray*}
+\int(x-\sqrt{x})^2 dx &=& \int(x^2-2x\sqrt{x}+x)dx\\
+\\
+&=& \frac{x^3}{3}-\frac{4}{5}x^{\frac{3}{2}}+\frac{x^2}{2}+C
+\end{eqnarray*}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220604.txt
+dvipdfmx calc220604.dvi
+
+\end{comment}
