@@ -1,0 +1,30 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題4(4)\\
+\\
+積分定数をCとする。
+\\
+\begin{eqnarray*}
+\int\frac{x^3-2x^2}{x^5} dx &=& \int(x^{-2}-2x^{-3})dx\\
+\\
+&=& \frac{1}{x^2}-\frac{1}{x}+C
+\end{eqnarray*}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220606.txt
+dvipdfmx calc220606.dvi
+
+\end{comment}
