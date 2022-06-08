@@ -1,0 +1,30 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題4(6)\\
+\\
+積分定数をCとする。
+\\
+\begin{eqnarray*}
+\int\frac{\sqrt[3]{x}+\sqrt{x}}{x} dx &=& \int x^{-\frac{2}{3}} + x^{-\frac{1}{2}} dx\\
+\\
+&=& 3\sqrt[3]{x}+2\sqrt{x}+C
+\end{eqnarray*}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220608.txt
+dvipdfmx calc220608.dvi
+
+\end{comment}

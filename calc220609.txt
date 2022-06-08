@@ -1,0 +1,28 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題5(1)\\
+\\
+積分定数をCとする。
+\\
+\begin{displaymath}
+\int \left(e^{3x} + 2\cos x \right) dx = \frac{1}{3}e^{3x}+2\sin x +C
+\end{displaymath}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220609.txt
+dvipdfmx calc220609.dvi
+
+\end{comment}
