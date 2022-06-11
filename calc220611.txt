@@ -1,0 +1,28 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題5(3)\\
+\\
+積分定数をCとする。
+\\
+\begin{displaymath}
+\int\left(e^{-4x}+3^x\right) dx = -\frac{1}{4}\hspace{1mm}e^{-4x}+\frac{3^x}{\log 3}+C
+\end{displaymath}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220611.txt
+dvipdfmx calc220611.dvi
+
+\end{comment}
