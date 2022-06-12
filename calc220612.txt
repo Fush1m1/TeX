@@ -1,0 +1,28 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+p27\\
+問題5(4)\\
+\\
+積分定数をCとする。
+\\
+\begin{displaymath}
+\int\cos (3x+5) dx = \frac{1}{3}\sin (3x+5)+C
+\end{displaymath}
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220612.txt
+dvipdfmx calc220612.dvi
+
+\end{comment}
