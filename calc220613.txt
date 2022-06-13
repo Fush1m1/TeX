@@ -1,0 +1,57 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+理系数学の良問プラチカ\\
+p14\\
+問27(1)\\
+《問》\\
+$n$を正の整数とする。$t≧0$の時、不等式$e^t>\dfrac{t^n}{n!}$が成り立つことを数学的帰納法で示せ。(東北大）\\
+\\
+《解》\\
+$f_n(t)=e^t-\dfrac{t^n}{n!}>0$を$n=1,2,$…について示す。\\
+\\
+\\
+\hspace{2mm}(1)\hspace{5mm}$n=1$の時、$f_1(t)=e^t-t$\\
+\\
+\hspace{12mm}$t≧0$より、$\log e^t≧\log 1$\\
+\\
+\hspace{12mm}両辺の対数を外し、$e^t≧1$\\
+\\
+\hspace{12mm}よって、$f'_1(t)=e^t-1≧0$なので、$f_1(t)$は単調増加。\\
+\\
+\hspace{12mm}加えて、$f_1(0)=1-0=1>0$\\
+\\
+\hspace{12mm}よって、$f_1(t)>0$\\
+\\
+\\
+\hspace{2mm}(2)\hspace{5mm}$n=k$の時、$f_k(t)=e^t-\dfrac{t^k}{k!}>0$とする。\\
+\\
+\hspace{12mm}$f_{k+1}(t)=e^t-\dfrac{t^{k+1}}{(k+1)!}$に対して$f'_{k+1}(t)=e^t-\dfrac{t^k}{k!}$\\
+\\
+\hspace{12mm}よって、仮定より$f'_{k+1}(t)>0$なので、$f_{k+1}(t)$は単調増加。\\
+\\
+\hspace{12mm}加えて、$f_{k+1}(0)=1-0=1>0$\\
+\\
+\hspace{12mm}よって、$f_{k+1}(t)>0$\\
+\\
+\\
+(1),(2)より、全ての$n$について帰納法により$f_n(t)>0$\\
+\\
+よって結論が従う。
+\end{document}
+
+
+
+%スクショポイント(322,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220613.txt
+dvipdfmx calc220613.dvi
+
+\end{comment}
