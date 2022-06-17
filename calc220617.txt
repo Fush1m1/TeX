@@ -1,0 +1,49 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\def\qed{\hfill $\Box$}
+
+
+\begin{document}
+経済学で出る数学\\
+p127
+例題5.5\\
+《問》\\
+対数関数の微分を使って、$(f(x)g(x))'=f'(x)g(x)+f(x)g'(x)$を示しなさい。
+\\
+《解》\\
+対数法則より$\log f(x)g(x) = \log f(x) + \log g(x)$\\
+左辺の微分は
+\begin{displaymath}
+\{\log f(x)g(x)\}' = \frac{(f(x)g(x))'}{f(x)g(x)}
+\end{displaymath}
+右辺の微分は
+\begin{displaymath}
+\{\log f(x) + \log g(x)\}' = \frac{f'(x)}{f(x)}+\frac{g'(x)}{g(x)} = \frac{f'(x)g(x)+f(x)g'(x)}{f(x)g(x)}
+\end{displaymath}
+両辺が等しいことにより
+\begin{displaymath}
+\frac{(f(x)g(x))'}{f(x)g(x)}=\frac{f'(x)g(x)+f(x)g'(x)}{f(x)g(x)}
+\end{displaymath}
+すなわち
+\begin{displaymath}
+(f(x)g(x))'=f'(x)g(x)+f(x)g'(x)
+\end{displaymath}
+\qed
+\end{document}
+
+
+
+%スクショポイント(135,)
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220617.txt
+dvipdfmx calc220617.dvi
+
+\end{comment}
