@@ -1,0 +1,62 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent = 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\def\qed{\hfill $\Box$}
+
+
+\begin{document}
+弱点克服 大学生の確率統計\\
+p76
+問題35\\
+《問》\\
+ガンマ関数とベータ関数の関係式
+\begin{displaymath}
+B(s,t) = \frac{\Gamma (s)\Gamma(t)}{\Gamma(s+t)}
+\end{displaymath}
+を示しなさい
+\\
+《解》
+\begin{eqnarray*}
+\Gamma (s)\Gamma(t) &=& \int^\infty_0 x^{s-1}e^{-x}dx \int^\infty_0 y^{t-1}e^{-y}dy
+\\
+\\
+&=& \int^\infty_0 x^{s-1}e^{-x}dx \int^\infty_0 xy^{t-1}e^{-xy}xdy
+\\
+\\
+&=& \int^\infty_0 x^{s+t-1}e^{-x}dx \int^\infty_0 y^{t-1}e^{-xy}dy
+\\
+\\
+&=& \int^\infty_0 y^{t-1}dy \int^\infty_0 x^{s+t-1}e^{-x(1+y)}dx
+\\
+\\
+&=& \int^\infty_0 y^{t-1}dy \int^\infty_0 \left(\frac{u}{1+y}\right)^{s+t-1}e^{-u}\,\frac{du}{1+y}
+\\
+\\
+&&\because{u=x(1+y)\text{と置換}}\\
+\\
+&&\hspace{3mm}\,x=\frac{u}{1+y}\\
+\\
+&&\hspace{3mm}\,\frac{du}{dx}=1+y\hspace{2mm}\text{より、}\hspace{2mm}dx=\frac{du}{1+y}\\
+\\
+&=& \int^\infty_0 \frac{y^{t-1}}{(1+y)^{s+t}}dy \int^\infty_0 u^{s+t-1}e^{-u}du
+\\
+\\
+&=& B(s,t) \Gamma(s+t)
+\end{eqnarray*}
+\qed
+\end{document}
+
+
+
+%以下、スクリプト
+\begin{comment}
+
+platex calc220618.txt
+dvipdfmx calc220618.dvi
+
+
+\end{comment}
