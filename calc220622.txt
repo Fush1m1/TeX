@@ -1,0 +1,77 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent= 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\def\qed{\hfill $\Box$}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+弱点克服 大学生の確率統計\\
+p76
+問題35\\
+《問》\\
+ガンマ関数$\Gamma(s)$とベータ関数$B(s,t)$について、以下を求めよ\\
+%\hspace{4mm}\,(1)$\Gamma(4)$
+%\vspace{2mm}\\
+%\hspace{4mm}\,(2)$B(3,4)$\\
+\\
+%(3)\hspace{4mm}\,$\displaystyle\int^\infty_0 x^4e^{-3x}\,dx$\\
+\\
+%(4)\hspace{4mm}\,$t>0$のとき、$\displaystyle\int^\infty_\infty e^{-tx^2}\,dx$\\
+%\\
+(5)\hspace{4mm}\,$\displaystyle\int^{2\pi}_0 \sin^4 \theta \cos^6 \theta\,d\theta$\\
+%\\
+%\hspace{4mm}\,(6)$\displaystyle\int^{2\pi}_0 \sin^4 \theta \cos^7 \theta\,d\theta$\\
+%\\
+%\hspace{4mm}\,(7)$\displaystyle\int^\infty_0 \frac{x^4}{(1+x)^9}\,dx$\\
+\\
+\\
+《解》
+\begin{align*}
+\int^{2\pi}_0 \sin^4 \theta\,\cos^6 \theta\,d\theta &= 4\int^{\frac{\pi}{2}}_0 \sin^4 \theta\,\cos^6 \theta\,d\theta\\
+\\
+&\because{\text{$\sin^4 \theta\,\cos^6 \theta$は非負の値をとり、$\Bigl[0,\frac{\pi}{2}\Bigr]$,$\Bigl[\frac{\pi}{2},\pi\Bigr]$,$\Bigl[\pi,\frac{3}{2}\pi\Bigr]$,$\Bigl[\frac{3}{2}\pi,2\pi\Bigr]$}}\\
+&\hspace{4mm}\,\text{でグラフの形が同じ}（注）\\
+\\
+&=2\cdot2\int^{\frac{\pi}{2}}_0 \sin^{2\frac{5}{2}-1} \theta\,\cos^{2\frac{7}{2}-1} \theta\,d\theta\\
+\\
+&=2B\left(\frac{5}{2},\frac{7}{2}\right)\\
+\\
+&=\frac{2\Gamma(\frac{5}{2})\Gamma(\frac{7}{2})}{\Gamma(6)}\\
+\\
+&=\frac{2\cdot\frac{3}{2}\cdot\frac{1}{2}\cdot\Gamma(\frac{1}{2})\cdot\frac{5}{2}\cdot\frac{3}{2}\cdot\frac{1}{2}\cdot\Gamma(\frac{1}{2})}{5!}\\
+\\
+&\because{\Gamma(n)=(n-1)(n-2)\cdot\cdot\cdot\frac{1}{2}\cdot\Gamma\left(\frac{1}{2}\right)}\\
+\\
+&=\frac{45\pi}{2^4\cdot5!}
+\end{align*}
+\newpage
+（注）\\
+下図はgeogebraで出力した$\sin^4 \theta\,\cos^6 \theta$のグラフである。\\
+各区間でx軸とグラフに囲まれた面積が下図のようにそれぞれ等しいことが確認できる。\\
+上述のような議論が可能である理由として、$sin\theta$と$cos\theta$がそれぞれ上の４つの区間でx軸と囲む面積が等しく、グラフの波長を決めているのは関数の指数ではなく$\theta$の係数であることが考えられる。\\
+すなわち$\sin^4 \theta\,\cos^6 \theta$の$\theta$の係数は1のためこの関数において周期が$2\pi$のまま$\sin\theta$及び$\cos\theta$と変わらず、$0<\theta\leq2\pi$において周期の第一四半と第二四半のグラフの、直線$x=\frac{\pi}{2}$に対する線対称性、及び周期の第三四半と第四四半のグラフの、直線$x=\frac{3}{2}\pi$に対する線対称性も維持されているためであると思われる。\\
+なお、下図は$x:y=10:1$で出力している。
+\begin{figure}[hbtp]
+\centering
+\includegraphics[keepaspectratio, scale=0.3]
+{220622001.png}
+\end{figure}
+\end{document}
+
+
+%以下、スクリプト
+\begin{comment}
+
+
+
+platex calc220622.txt
+dvipdfmx calc220622.dvi
+
+
+
+
+\end{comment}
