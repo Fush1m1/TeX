@@ -1,0 +1,83 @@
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\parindent= 0pt
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\def\qed{\hfill $\Box$}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+弱点克服 大学生の確率統計\\
+p76
+問題35\\
+《問》\\
+ガンマ関数$\Gamma(s)$とベータ関数$B(s,t)$について、以下を求めよ\\
+\\
+(6)\hspace{4mm}\,$\displaystyle\int^{2\pi}_0 \sin^4 \theta \cos^7 \theta\,d\theta$\\
+\\
+(7)\hspace{4mm}\,$\displaystyle\int^\infty_0 \frac{x^4}{(1+x)^9}\,dx$\\
+\\
+\\
+《解》\\
+(6)
+\begin{displaymath}
+\int^{2\pi}_0 \sin^4 \theta \cos^7 \theta\,d\theta=0
+\end{displaymath}
+\begin{displaymath}
+\because{\cos^7\theta\text{は}0\leq\theta\leq2\pi\,\text{で}\pm\text{の値をとることと、対称性による}}
+\end{displaymath}
+(7)
+\begin{align*}
+B(s,t):&=\int^1_0 x^{s-1}(1-x)^{t-1}\,dx\\
+\\
+&= \int^0_\infty \left(\frac{1}{1+u}\right)^{s-1}\left(\frac{u}{1+u}\right)^{t-1}\frac{-1}{(1+u)^2}\,du\\
+\\
+&\because{x=\frac{1}{1+u}\text{と置換}}\\
+\\
+&\hspace{4mm}\,\frac{dx}{du}=(1+u)^{-1}\,\frac{d}{du}=-(1+u)^{-2}=\frac{-1}{(1+u)^2}\\
+\\
+&\hspace{4mm}\,\text{積分範囲については以下のとおり}
+\end{align*}
+\begin{table}[hbtp]
+\hspace{70pt}
+\begin{tabular}{cc|l}
+$x$ &&$\hspace{1mm}$0$\hspace{1mm}$・・・$\hspace{1mm}$1\\
+\hline
+$u$ &&$\infty$・・・$\hspace{1mm}$0\\
+\end{tabular}
+\end{table}
+\\
+\begin{displaymath}
+\hspace{13mm}=\int^\infty_0 \frac{u^{t-1}}{(1+u)^{s+t}}\,du
+\end{displaymath}
+\begin{align*}
+\int^\infty_0 \frac{x^4}{(1+x)^9}\,dx &= B(4,5)\\
+\\
+&=\frac{\Gamma(4)\Gamma(5)}{\Gamma(9)}\\
+\\
+&=\frac{3!4!}{8!}\\
+\\
+&=\frac{1}{280}
+\end{align*}
+\end{document}
+
+
+\begin{comment}
+
+\begin{align*}
+\end{align*}
+
+
+
+
+platex calc220623.txt
+dvipdfmx calc220623.dvi
+
+
+
+
+
+
+\end{comment}
