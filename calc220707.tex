@@ -1,0 +1,33 @@
+\documentclass[fleqn]{jsarticle}
+\parindent= 0pt
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{enumitem}
+
+
+\begin{document}
+Hello,\,\LaTeX\@!\\
+\\
+問36
+
+\begin{enumerate}[label=\fbox{\arabic*}]
+\item $h$は単調増加関数で$Y=h(X)$とする。\\
+この時,\,$Y$の分布関数$F_Y(x)$を$X$の分布関数$F_X(x)$と$h$で表せ。\\
+また,\,$Y$の密度関数$f_y(x)$も求めよ。
+\end{enumerate}
+
+解答
+\begin{align*}
+    F_Y(x)&=P(Y\leq x)=P(h(X)\leq x)\\
+    &=P(X\leq h^{-1}(x))=F_X(h^{-1}(x))
+\end{align*}
+\\
+\hspace{50pt}上式をxで微分して
+
+\begin{align*}
+    f_Y(x)=\frac{d}{dx}F_Y(x)=\frac{d}{dx}F_X(h^{-1}(x))=(F_X)'(h^{-1}(x))(h^{-1})'(x)
+\end{align*}
+\end{document}
