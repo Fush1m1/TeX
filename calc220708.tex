@@ -1,0 +1,45 @@
+\documentclass[fleqn]{jsarticle}
+\parindent= 0pt
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{enumitem}
+
+
+\begin{document}
+問36\\
+\\
+\hspace{10pt}\fbox{2}\hspace{8pt}(1)\\
+\hspace{30pt}$Y=aX+b\,(a>0)$のとき,\,\,$f_Y(x)$を$f_X(x)$で表せ。\\
+\hspace{30pt}(2)\\
+\hspace{30pt}$Y=X^2$のときの$f_Y(x)$,\,\,またそのとき$P(X>0)=1$のときの$f_Y(x)$を求めよ。
+\\
+\\
+解答\\
+\hspace{30pt}(1)
+\begin{align*}
+    F_Y(x)&=P(Y\leq x)=P(aX+b\leq x)\\
+    &=P\left(X\leq \frac{x-b}{a}\right)=F_X\left(\frac{x-b}{a}\right)
+\end{align*}
+\hspace{30pt}上式をxで微分して
+\begin{align*}
+    f_Y(x)=f_X\left(\frac{x-b}{a}\right)\,\frac{1}{a}
+\end{align*}
+\\
+\hspace{30pt}(2)
+\begin{align*}
+    F_Y(x)&=P(Y\leq x)=P(X^2\leq x)\\
+    &=P(-\sqrt{x}\leq X \leq \sqrt{x}\,)=F_X(\sqrt{x})-F_X(-\sqrt{x}\,)
+\end{align*}
+\hspace{30pt}上式をxで微分して
+\begin{align*}
+    f_Y(x)=\frac{f_X(\sqrt{x})+f_X(-\sqrt{x})}{2\sqrt{x}\,}\hspace{10pt}(x>0)
+\end{align*}
+\\
+\hspace{30pt}$P(X>0)=1$のときは,\,$F_Y(x)=P(0\leq X \leq \sqrt{x}\,)$
+\begin{align*}
+    \therefore\,\, f_Y(x)=\frac{f_X(\sqrt{x})}{2\sqrt{x}}\hspace{10pt}(x>0)
+\end{align*}
+\end{document}
